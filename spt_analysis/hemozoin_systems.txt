@@ -1,0 +1,8 @@
+free_hemozoin_peroxide_0_1000000
+free_hemozoin_0_1000000
+free_hemozoin_40pr_0_1000000
+free_hemozoin_60pr_0_1000000
+fv_hemozoin_0_300
+fv_hemozoin_knob05_0_300
+fv_hemozoin_knob1_0_300
+fv_hemozoin_knob2_0_300
