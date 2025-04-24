@@ -1,2 +1,0 @@
-sim_hemozoin_0pr_new_0_1000000
-sim_hemozoin_60pr_new_0_1000000
