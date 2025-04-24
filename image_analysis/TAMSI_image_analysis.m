@@ -30,7 +30,7 @@ end
 
 % Plot changes to pixels over time -----------------------------------------------
         
-[init_pixelchange,s] = pixelchange(IM02,dt);
+[init_pixelchange,s] = TAMSI_pixelchange(IM02,dt);
 
 init_pixelchange_sum = sum(init_pixelchange,3);
 
@@ -53,7 +53,7 @@ for t = 1:nT
         IM022{t} = IM011;
 end
 
-[final_pixelchange,s] = pixelchange(IM022,dt);
+[final_pixelchange,s] = TAMSI_pixelchange(IM022,dt);
     
 final_pixelchange_sum = sum(final_pixelchange,3);
 final_pixelchange_sumindiv = squeeze(sum(final_pixelchange, [1 2]));
