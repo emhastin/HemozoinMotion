@@ -1,5 +1,5 @@
 % make G with regularized stokeslet
-function G=makeGregstv2(sp,mu,epsvec)    % epsvec : 1 row x N column of e,  
+function G=MATLAB_makeGregstv2(sp,mu,epsvec)    % epsvec : 1 row x N column of e,  
 nsp=length(sp) ;                         % sp: 3 rows x N columns of position matrix (r)
 G = zeros(3*nsp) ;                       % 3 = 3D, nsp = length of r
 L1 = zeros(1,3*nsp) ;                    % G matrix describes each sphere in x,y,z position in relation to all other spheres
