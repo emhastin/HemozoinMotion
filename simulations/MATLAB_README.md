@@ -1,6 +1,6 @@
 # Simulations: Particle-particle interactions and confinement
 
-## *Simulations were scripted in BOTH matlab and python*
+## *Simulations were scripted in matlab and python*
 
 ### For MATLAB:
 1. _Install **MATLAB 2023b** (or recent version)._
