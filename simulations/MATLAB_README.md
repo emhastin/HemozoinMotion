@@ -1,10 +1,10 @@
-Simulations: Particle-particle interactions and confinement
-Simulations were scripted in BOTH matlab and python
-For MATLAB:
-Install MATLAB 2023b (or recent version).
+# Simulations: Particle-particle interactions and confinement
 
-Install Java on computer.
+## *Simulations were scripted in BOTH matlab and python*
 
-Download all MATLAB files from Github, and add the directory containing them to the MATLAB path (MATLAB -> Home tab -> Set Path).
+### For MATLAB:
+1. _Install **MATLAB 2023b** (or recent version)._
 
-For PYTHON:
+2. _Install **Java** on computer._
+
+3. _Download all MATLAB files from Github, and add the directory containing them to the MATLAB path (MATLAB -> Home tab -> Set Path)._
