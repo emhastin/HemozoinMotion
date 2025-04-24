@@ -1,4 +1,4 @@
-function IRX = fIRX(n,d,r)
+function IRX = MATLAB_fIRX(n,d,r)
 
     if d == 2
 % creating IRX matrix
