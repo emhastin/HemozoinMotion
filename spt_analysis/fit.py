@@ -5,7 +5,7 @@ import sys
 import matplotlib.pyplot as plt
 from matplotlib.ticker import (MultipleLocator, FormatStrFormatter, AutoMinorLocator, FuncFormatter)
 
-from common import norm_diff, norm_diff_stat_loc_err, norm_diff_fixed_stat_loc_err, anom_diff, anom_diff_stat_loc_err, anom_diff_fixed_stat_loc_err, perform_weighted_fit, perform_unweighted_fit
+from common import norm_diff, norm_diff_stat_loc_err, anom_diff, anom_diff_stat_loc_err, perform_weighted_fit, perform_unweighted_fit
 
 tamsd_system = sys.argv[1]
 model = eval(sys.argv[2])
