@@ -1,0 +1,41 @@
+# VARIABLES
+variable fname index spheres_harm1.txt
+variable xyzname index spheres_y1_${idx}.xyz
+variable resname index spheres_y1_${idx}.rst
+variable simname index spheres_y1_${idx}
+
+print "Seed 1: ${seed1}"
+
+# Initialization
+units		real
+boundary	f f f
+atom_style	molecular
+pair_style  yukawa 0.0001 20000.0
+pair_modify shift yes
+
+log 		log.${simname}.txt
+
+read_data	${fname}
+pair_coeff 1 1 3000.0 20000.0
+
+atom_modify sort 1000 100000.0
+neigh_modify binsize 100000.0
+
+timestep 1000000000
+
+group 1 type 1
+
+fix 1 1 brownian 293.15 ${seed1} gamma_t 1917.0
+
+region 1 sphere 0.0 0.0 0.0 29000.0 side in
+
+fix 2 1 wall/region 1 harmonic 0.1 1000.0 1000.0
+
+dump 1 all xyz 1000 ${xyzname}
+
+thermo_style custom step pe ebond eangle edihed evdwl elong
+thermo 1000000
+
+run       20000000
+
+print "All done"
